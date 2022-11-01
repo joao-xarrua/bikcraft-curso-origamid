@@ -12,7 +12,7 @@ $body_content = "";
 foreach( $_POST as $field => $value) {
   if( $field !== "leaveblank" && $field !== "dontchange" && $field !== "enviar") {
     $sanitize_value = filter_var($value, FILTER_SANITIZE_STRING);
-    $body_content .= "$field: $value \n";
+    $body_content .= "$field: $value  \n";
   }
 }
 
